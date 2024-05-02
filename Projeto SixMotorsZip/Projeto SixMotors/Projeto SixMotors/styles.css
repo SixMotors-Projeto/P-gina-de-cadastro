@@ -1,0 +1,161 @@
+
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Define a família de fontes */
+    background-image: linear-gradient(to top, rgb(183, 183, 183), rgb(255, 255, 255), rgb(183, 183, 183)); /* Define um fundo com gradiente */
+    box-sizing: border-box; /* Define a caixa de modelagem para incluir as bordas no cálculo da largura e altura */
+    background-size: 100%, 100%; /* Define o tamanho do plano de fundo */
+    min-height: 100vh;
+    margin: 0; /* Remove as margens padrão */
+    display: flex; /* Define um contêiner flexível para organizar os itens em coluna */
+    flex-direction: column; /* Organiza os itens na coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Estilo para o cabeçalho */
+header {
+    display: flex; /* Define o cabeçalho como um contêiner flexível */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    width: 100%; /* Define a largura do cabeçalho */
+    background-image: linear-gradient(to right, rgb(43, 66, 103), rgb(107, 148, 215), rgb(49, 77, 109)); /* Define um fundo com gradiente */
+    color: white; /* Define a cor do texto */
+    box-sizing: border-box; /* Define a caixa de modelagem */
+    height: 60px; /* Define a altura do cabeçalho */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+/* Estilo para o título do cabeçalho */
+header h1 {
+    font-size: 25px; /* Define o tamanho da fonte */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+/* Estilo para a imagem do cabeçalho */
+header img {
+    width: 80px; /* Define a largura da imagem */
+}
+
+/* Estilo para o contêiner de login */
+.login {
+    position: absolute; /* Posiciona absolutamente em relação ao elemento pai */
+    top: 10px; /* Distância do topo */
+    right: 30px; /* Distância da direita */
+    display: flex; /* Define o contêiner como flexível */
+    align-items: center; /* Centraliza os itens verticalmente */
+    cursor: pointer;
+}
+
+/* Estilo para o texto de login */
+.login p {
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    margin-right: 5px; /* Espaçamento entre o texto e o ícone */
+    font-size: 14px; /* Tamanho da fonte */
+    text-transform: uppercase;
+}
+
+/* Estilo para o ícone de login */
+.login img {
+    width: 35px; /* Largura do ícone */
+}
+
+/* Estilo para o título "CRIE SEU CADASTRO" */
+.crieSeuCadastro h2 {
+    position: relative; /* Define a posição relativa */
+    top: -45px; /* Move o título para cima */
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+/* Estilo para a caixa principal */
+.box {
+    background-color: rgba(194, 211, 237, 0.8); /* Define a cor de fundo com transparência */
+    padding: 40px; /* Adiciona preenchimento interno */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    width: 80%; /* Define a largura da caixa */
+    max-width: 600px; /* Define a largura máxima da caixa */
+    margin-top: -80px; /* Move a caixa para cima */
+    display: flex; /* Define a caixa como um contêiner flexível */
+    flex-direction: column; /* Organiza os itens na coluna */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);   
+}
+
+/* Estilo para o formulário dentro da caixa */
+.box form {
+    display: flex; /* Define o formulário como um contêiner flexível */
+    flex-direction: column; /* Organiza os itens na coluna */
+    width: 100%; /* Define a largura do formulário */
+}
+
+/* Estilo para os botões de rádio */
+.box form .radio {
+    align-self: flex-start; /* Alinha os botões de rádio à esquerda */
+}
+
+/* Estilo para os botões de rádio */
+.radio {
+    display: flex; /* Define os botões de rádio como um contêiner flexível */
+    justify-content: center; /* Centraliza os botões de rádio horizontalmente */
+    align-items: center; /* Centraliza os botões de rádio verticalmente */
+    margin-bottom: 20px; /* Adiciona margem inferior */
+}
+
+/* Estilo para os botões de rádio */
+.radio input[type="radio"] {
+    margin-right: 10px; /* Adiciona margem à direita */
+    transform: scale(1.1); /* Aumenta o tamanho dos botões de rádio */
+}
+
+/* Estilo para as etiquetas dos botões de rádio */
+.radio label {
+    margin-right: 30px; /* Adiciona margem à direita */
+    white-space: nowrap; /* Evita que as etiquetas quebrem em várias linhas */
+}
+
+/* Estilo para as etiquetas dos campos de entrada */
+.box label {
+    display: block; /* Define cada etiqueta em uma nova linha */
+    margin-bottom: 5px; /* Adiciona margem inferior */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Estilo para os campos de entrada */
+/* Estilo para os campos de entrada dentro da caixa */
+.box input {
+    padding: 5px; /* Adiciona preenchimento interno */
+    outline: none; /* Remove o contorno quando o campo está em foco */
+    margin-bottom: 3%; /* Adiciona margem inferior */
+    
+}
+
+/* Estilo para os campos de entrada do formulário dentro da caixa */
+.box form input {
+    margin-bottom: -1%; /* Ajusta a margem inferior para sobreposição */
+}
+
+/* Estilo para o botão dentro da caixa */
+.box button {
+    padding: 10px; /* Adiciona preenchimento interno */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    width: 40%; /* Define a largura do botão */
+    margin-top: 5px; /* Adiciona margem superior */
+    color: white; /* Cor do texto */
+    background-color: rgb(248, 0, 0); /* Cor de fundo */
+    cursor: pointer; /* Define o cursor do mouse como pointer */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+    border: none; /* Remove a borda */
+    margin: auto; /* Centraliza horizontalmente */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5); /* Adiciona uma sombra */
+}
+
+/* Estilo para o botão quando o mouse está sobre ele */
+button:hover {
+    background-color: rgb(76, 106, 151); /* Altera a cor de fundo */
+    transition: 0.5s; /* Adiciona uma transição */
+    border: 1px solid rgb(255, 255, 255); /* Adiciona uma borda */
+}
+
